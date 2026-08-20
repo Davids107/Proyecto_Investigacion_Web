@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Nombre del tema] — Revista de Investigación</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       ENCABEZADO — igual que en el formato entrevista
+       ============================================================ -->
+  <header class="revista__header">
+    <span class="revista__eyebrow">Investigación · Ingeniería en Sistemas</span>
+    <h1 class="revista__titulo">[Título llamativo de la investigación]</h1>
+    <p class="revista__subtitulo">[Subtítulo: una frase que resuma el tema]</p>
+    <p class="revista__meta">
+      Grupo [XX] · [Nombre del grupo] · Edición [fecha]
+    </p>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         UN SOLO <article class="articulo"> por grupo (a diferencia del
+         formato entrevista, aquí todos los integrantes firman un
+         mismo artículo, como autores).
+         ============================================================ -->
+    <article class="articulo">
+
+      <h2 class="articulo__titulo">[Título del artículo — puede repetir o afinar el título de arriba]</h2>
+      <p class="articulo__autores">
+        Por: [Integrante 1], [Integrante 2], [Integrante 3], [Integrante 4]
+      </p>
+
+      <!-- Resumen / Abstract -->
+      <div class="articulo__resumen">
+        <span class="articulo__resumen-titulo">Resumen</span>
+        <p>
+          [3-5 líneas que resuman de qué trata la investigación, qué método usaron
+          y a qué conclusión llegaron. Se escribe al final, aunque va primero.]
+        </p>
+      </div>
+
+      <!-- El contenedor .articulo__cuerpo activa columnas tipo revista
+           en pantallas grandes y el drop cap automático. No lo quiten. -->
+      <div class="articulo__cuerpo">
+
+        <!-- 1. Introducción -->
+        <section class="seccion">
+          <h3 class="seccion__titulo">1. Introducción</h3>
+          <p class="seccion__texto">
+            [Planteamiento del problema o pregunta de investigación. Esta primera
+            sección lleva la letra capital automáticamente, no hay que hacer nada extra.]
+          </p>
+        </section>
+
+        <!-- 2. Objetivos e hipótesis -->
+        <section class="seccion">
+          <h3 class="seccion__titulo">2. Objetivos e hipótesis</h3>
+          <p class="seccion__texto">
+            [Qué buscaban lograr y qué esperaban encontrar antes de investigar.]
+          </p>
+        </section>
+
+        <!-- 3. Metodología -->
+        <section class="seccion">
+          <h3 class="seccion__titulo">3. Metodología</h3>
+          <p class="seccion__texto">
+            [Cómo investigaron: fuentes, herramientas, proceso.]
+          </p>
+        </section>
+
+        <!-- Cita destacada opcional: rompe las dos columnas automáticamente -->
+        <blockquote class="destacado">
+          "[Frase corta y memorable extraída de los hallazgos del grupo]"
+        </blockquote>
+
+        <!-- 4. Resultados -->
+        <section class="seccion">
+          <h3 class="seccion__titulo">4. Resultados</h3>
+          <p class="seccion__texto">
+            [Qué encontraron. Puede incluir datos, comparaciones, hallazgos clave.]
+          </p>
+        </section>
+
+        <!-- 5. Discusión y conclusión -->
+        <section class="seccion">
+          <h3 class="seccion__titulo">5. Discusión y conclusión</h3>
+          <p class="seccion__texto">
+            [Qué significan los resultados, y su conclusión o propuesta de solución.]
+          </p>
+        </section>
+
+        <!-- 6. Referencias -->
+        <section class="seccion">
+          <h3 class="seccion__titulo">6. Referencias</h3>
+          <ol class="referencias">
+            <li>[Autor, A. (Año). Título de la fuente. Editorial/Sitio.]</li>
+            <li>[Autor, B. (Año). Título de la fuente. Editorial/Sitio.]</li>
+          </ol>
+        </section>
+
+      </div>
+
+    </article>
+
+  </main>
+
+  <footer>
+    Proyecto de Investigación Web · Programación Web I · Ingeniería en Sistemas
+  </footer>
+
+</body>
+</html>

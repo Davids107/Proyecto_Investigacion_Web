@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Nombre del tema] — Revista de Investigación</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       ENCABEZADO — completar título, tema y datos del grupo
+       ============================================================ -->
+  <header class="revista__header">
+    <span class="revista__eyebrow">Investigación · Ingeniería en Sistemas</span>
+    <h1 class="revista__titulo">[Título llamativo de la investigación]</h1>
+    <p class="revista__subtitulo">[Subtítulo: una frase que resuma el tema]</p>
+    <p class="revista__meta">
+      Grupo [XX] · [Nombre del grupo] · Edición [fecha]
+    </p>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         UN <article class="entrevista"> POR CADA INTEGRANTE.
+         Copien este bloque completo y repítanlo por cada persona
+         del grupo. No cambien los nombres de clase.
+         ============================================================ -->
+    <article class="entrevista">
+
+      <div class="entrevista__encabezado">
+        <figure class="entrevista__foto">
+          <img src="../assets/foto-integrante-1.jpg" alt="Foto de [Nombre del integrante]">
+        </figure>
+        <div>
+          <h2 class="entrevista__nombre">[Nombre del integrante]</h2>
+          <p class="entrevista__rol">[Su enfoque dentro de la investigación]</p>
+        </div>
+      </div>
+
+      <!-- El contenedor .entrevista__cuerpo activa columnas tipo revista
+           en pantallas grandes y el drop cap automático. No lo quiten. -->
+      <div class="entrevista__cuerpo">
+
+        <!-- Etapa 1: Planteamiento del problema -->
+        <section class="etapa">
+          <span class="etapa__numero">01 · Planteamiento</span>
+          <p class="etapa__pregunta">¿Qué problema o pregunta los llevó a esta investigación?</p>
+          <p class="etapa__respuesta">
+            [Respuesta del integrante — redactada en primera persona, de forma natural. Esta primera respuesta lleva la letra capital automáticamente, no hay que hacer nada extra.]
+          </p>
+        </section>
+
+        <!-- Etapa 2: Hipótesis -->
+        <section class="etapa">
+          <span class="etapa__numero">02 · Hipótesis</span>
+          <p class="etapa__pregunta">¿Qué esperaban encontrar antes de investigar?</p>
+          <p class="etapa__respuesta">
+            [Respuesta del integrante]
+          </p>
+        </section>
+
+        <!-- Etapa 3: Metodología -->
+        <section class="etapa">
+          <span class="etapa__numero">03 · Metodología</span>
+          <p class="etapa__pregunta">¿Cómo investigaron esto? ¿Qué fuentes o métodos usaron?</p>
+          <p class="etapa__respuesta">
+            [Respuesta del integrante]
+          </p>
+        </section>
+
+        <!-- Cita destacada opcional: usar para resaltar una frase fuerte.
+             En pantallas grandes rompe las dos columnas automáticamente. -->
+        <blockquote class="destacado">
+          "[Frase corta y memorable extraída de la respuesta de este integrante]"
+        </blockquote>
+
+        <!-- Etapa 4: Resultados -->
+        <section class="etapa">
+          <span class="etapa__numero">04 · Resultados</span>
+          <p class="etapa__pregunta">¿Qué encontraron? ¿Qué los sorprendió?</p>
+          <p class="etapa__respuesta">
+            [Respuesta del integrante]
+          </p>
+        </section>
+
+        <!-- Etapa 5: Conclusión / propuesta -->
+        <section class="etapa">
+          <span class="etapa__numero">05 · Conclusión</span>
+          <p class="etapa__pregunta">¿A qué conclusión llegaron o qué proponen?</p>
+          <p class="etapa__respuesta">
+            [Respuesta del integrante]
+          </p>
+        </section>
+
+      </div>
+
+    </article>
+    <!-- ===================== FIN DEL BLOQUE POR INTEGRANTE ===================== -->
+
+    <!--
+      Copien el <article class="entrevista"> de arriba tantas veces como
+      integrantes tenga el grupo, y completen cada uno con su información.
+    -->
+
+  </main>
+
+  <footer>
+    Proyecto de Investigación Web · Programación Web I · Ingeniería en Sistemas
+  </footer>
+
+</body>
+</html>

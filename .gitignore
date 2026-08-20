@@ -1,0 +1,16 @@
+﻿# Archivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Archivos de preview/demo internos (no van al repo)
+demo-preview.html
+
+# Node (por si alguien instala algo localmente)
+node_modules/
