@@ -64,15 +64,15 @@ proyecto-investigacion-web/
 2. Decidan como grupo qué formato usar y copien la carpeta correspondiente (`template/formato-entrevista/` o `template/formato-articulo/`) junto con `template/css/` dentro de `grupos/`, renombrando la carpeta según la convención:
    `grupo-XX-tema-corto` (ejemplo: `grupo-03-inteligencia-artificial`)
 3. Editen **únicamente** dentro de su carpeta. No modifiquen `template/` ni el contenido de otros grupos.
-4. Suban su avance mediante **commits individuales** — cada integrante debe tener al menos un commit visible con su parte de la entrevista. Esto es parte de la evaluación de trabajo en equipo.
+4. Suban su avance mediante **commits individuales** — cada integrante debe tener al menos un commit visible con su contribución al proyecto. Esto es parte de la evaluación de trabajo en equipo.
 5. Al finalizar, abran un **Pull Request** hacia la rama principal con el nombre: `Entrega Grupo XX - Nombre del tema`.
 
 ## 6. Reglas generales
 
 - Todo el sitio debe construirse **solo con HTML y CSS** (ver `docs/guia-html-css.md` para el detalle exacto de qué está permitido en esta etapa del curso).
 - Deben usar las clases y estructura del `template/`. Pueden ampliar el CSS, pero no eliminar ni romper la estructura base.
-- El texto de la entrevista debe sonar natural y fluido, no como una lista de respuestas cortadas. Redacten como si un periodista realmente les hubiera hecho estas preguntas.
-- Cada integrante debe tener su sección claramente identificada dentro de la página (foto o ilustración, nombre, y sus respuestas).
+- El contenido debe ser fluido y bien redactado. En el formato entrevista: las respuestas deben sonar naturales, como si un periodista realmente les hubiera hecho esas preguntas. En el formato artículo: cada sección debe estar bien argumentada y conectada con las demás.
+- En el formato entrevista: cada integrante debe tener su sección claramente identificada (foto o ilustración, nombre y sus respuestas). En el formato artículo: todos los integrantes deben aparecer firmando como autores.
 
 ## 7. Documentos relacionados
 
@@ -82,9 +82,10 @@ proyecto-investigacion-web/
 ## 8. Checklist antes de entregar
 
 - [ ] Mi grupo usó la plantilla de `template/` sin romper su estructura
-- [ ] Cada integrante tiene su propia sección con las 5 etapas del método científico respondidas como entrevista
-- [ ] El texto suena fluido y profesional, no como una lista técnica
+- [ ] El contenido cubre las 5 etapas del método científico en el formato elegido (entrevista o artículo científico)
+- [ ] El texto es fluido y profesional — no es una lista de datos sin desarrollar ni un reporte copiado y pegado
 - [ ] Cada integrante tiene al menos un commit propio
 - [ ] Revisé `docs/guia-html-css.md` y no usé etiquetas o técnicas fuera de lo permitido
 - [ ] El Pull Request está abierto con el nombre correcto
+
 
