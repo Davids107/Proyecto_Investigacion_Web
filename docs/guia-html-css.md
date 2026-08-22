@@ -13,8 +13,8 @@ En lugar de armar todo con `<div>`, la estructura del `template/index.html` ya u
 | Etiqueta | Para qué se usa aquí |
 |---|---|
 | `<header>` | Encabezado de la revista (título, número de edición, nombre del grupo) |
-| `<main>` | Contenedor de todo el contenido de la entrevista |
-| `<article>` | Cada bloque de entrevista (una por integrante) |
+| `<main>` | Contenedor de todo el contenido de la revista |
+| `<article>` | Cada bloque de contenido — en formato entrevista: uno por integrante; en formato artículo: uno por grupo |
 | `<section>` | Cada etapa del método científico dentro de una entrevista |
 | `<figure>` / `<figcaption>` | Foto o ilustración del integrante con su descripción |
 | `<footer>` | Créditos, fecha, curso |
@@ -109,4 +109,5 @@ grupos/grupo-XX-tema/
 - Abran su `index.html` en el navegador y revisen que no haya elementos rotos.
 - Verifiquen que el HTML sea válido (pueden usar [validator.w3.org](https://validator.w3.org)).
 - Confirmen que todas las imágenes tengan `alt` y que los enlaces (si hay) funcionen.
+
 

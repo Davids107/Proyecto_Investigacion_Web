@@ -17,7 +17,7 @@ Ambos formatos usan la misma plantilla visual (`template/css/estilos.css`), así
 
 ## 2. Tema de investigación
 
-Cada grupo elige **uno** de estos dos caminos:
+Cada grupo elige **uno o dos** temas para investigar. Los temas pueden ser de estos dos caminos:
 
 - **Tecnología o tema innovador actual** — una tecnología emergente, tendencia o innovación relevante hoy en día (IA, ciberseguridad, cómputo en la nube, hardware, sostenibilidad tecnológica, etc.)
 - **Propuesta de solución a un problema actual de la carrera** — un problema real o vigente relacionado con Ingeniería en Sistemas, y una propuesta de solución fundamentada.
@@ -87,5 +87,6 @@ proyecto-investigacion-web/
 - [ ] Cada integrante tiene al menos un commit propio
 - [ ] Revisé `docs/guia-html-css.md` y no usé etiquetas o técnicas fuera de lo permitido
 - [ ] El Pull Request está abierto con el nombre correcto
+
 
 

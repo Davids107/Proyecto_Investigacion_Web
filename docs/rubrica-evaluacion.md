@@ -11,3 +11,4 @@ Evaluación aplicada por el PM del curso antes de pasar la entrega consolidada a
 | **Presentación visual** | Uso correcto de la paleta y tipografía del template; jerarquía visual clara; imágenes con `alt` y bien integradas | 10 |
 | **Entrega y organización** | Carpeta con el nombre correcto, Pull Request bien nombrado, repositorio limpio (sin archivos sueltos o de prueba) | 5 |
 
+
