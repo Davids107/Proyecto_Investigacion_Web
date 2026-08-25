@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Nombre del tema] — Revista de Investigación</title>
+  <!--<link rel="stylesheet" href="estilos.css">-->
+  <style>
+    :root {
+  --color-fondo:        #F2F0EB;   
+  --color-papel:        #FAFAF8;   
+  --color-tinta:        #111111;   
+  --color-tinta-suave:  #555555;   
+  --color-acento:       #B5862A;   
+  --color-acento-texto: #7A5511;   
+  --color-acento-2:     #1A4D6B;   
+  --color-linea:        #D5D2CB;   
+  --color-regla:        #111111;   
+
+  --fuente-titulo: Georgia, 'Times New Roman', serif;
+  --fuente-texto:  Georgia, 'Times New Roman', serif;  
+  --fuente-meta:   'Courier New', Courier, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: #F2F0EB;
+  color: #111111;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.0625rem;   
+  line-height: 1.75;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  color: #1A4D6B; 
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+main {
+  max-width: 72ch;    
+  margin: 0 auto;
+  padding: 0 1.5rem 5rem;
+}
+.revista__header {
+  max-width: 72ch;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+  text-align: center;
+  border-bottom: 3px double #111111; 
+}
+.revista__eyebrow {
+  display: block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #555555; 
+  margin-bottom: 1rem;
+}
+.revista__titulo {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: normal;       
+  line-height: 1.15;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+.revista__subtitulo {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #555555;
+  margin: 0 0 1.25rem;
+}
+.revista__meta {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: #555555;
+  border-top: 1px solid #D5D2CB; 
+  padding-top: 0.75rem;
+  display: block;
+}
+.entrevista {
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  border-top: 3px solid #111111; 
+}
+.entrevista__encabezado {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+.entrevista__foto {
+  flex-shrink: 0;
+  margin: 0;
+}
+.entrevista__foto img {
+  width: 96px;
+  height: 120px;             
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  border: 1px solid #D5D2CB; 
+}
+.entrevista__nombre {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0 0 0.2rem;
+  line-height: 1.2;
+}
+.entrevista__rol {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #7A5511; 
+  display: block;
+  margin-top: 0.4rem;
+}
+.entrevista__cuerpo {
+  margin-top: 0.5rem;
+}
+.etapa {
+  padding: 1.5rem 0;
+  border-top: 1px solid #D5D2CB; 
+  break-inside: avoid;
+}
+.etapa__numero {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #555555;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.etapa__pregunta {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  font-weight: normal;
+  color: #111111;
+  margin: 0 0 0.75rem;
+  line-height: 1.4;
+}
+.etapa__respuesta {
+ 
+  margin: 0;
+  color: #111111;    
+  line-height: 1.8;             
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+.destacado {
+  margin: 2.5rem 0;
+  padding: 1.25rem 2rem;
+  border-top: 2px solid #111111; 
+  border-bottom: 2px solid #111111; 
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 1.45rem;
+  line-height: 1.45;
+  color: #111111;
+  text-align: center;
+  column-span: all;   
+}
+.entrevista__cuerpo .etapa:first-of-type .etapa__respuesta::first-letter {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 4rem;
+  font-weight: bold;
+  float: left;
+  line-height: 0.78;
+  padding: 0.05rem 0.35rem 0 0;
+  color: #111111;
+}
+a:focus-visible,button:focus-visible,[tabindex]:focus-visible {
+  outline: 3px solid #1A4D6B;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+footer {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: #555555;
+  border-top: 1px solid #D5D2CB;
+  margin-top: 4rem;
+}
+.articulo {
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  border-top: 3px solid #111111; 
+}
+.articulo__titulo {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.9rem;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+}
+.articulo__autores {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  color: #555555;
+  margin: 0 0 2rem;
+  border-bottom: 1px solid #D5D2CB;
+  padding-bottom: 1rem;
+}
+.articulo__resumen {
+  margin-bottom: 2rem;
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid #B5862A;
+  background-color: transparent;
+}
+.articulo__resumen-titulo {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #555555;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.articulo__resumen p {
+  font-style: italic;
+  color: #111111;
+  margin: 0;
+  line-height: 1.7;
+}
+.articulo__cuerpo {
+  margin-top: 0.5rem;
+}
+.articulo__cuerpo .seccion:first-of-type .seccion__texto::first-letter {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 4rem;
+  font-weight: bold;
+  float: left;
+  line-height: 0.78;
+  padding: 0.05rem 0.35rem 0 0;
+  color: #111111;
+}
+.seccion {
+  padding: 1.5rem 0;
+  border-top: 1px solid #D5D2CB;
+  break-inside: avoid;                                                                         
+}
+.seccion__titulo {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  margin: 0 0 0.6rem;
+}
+.seccion__texto {
+  margin: 0;
+  color: #111111;
+  line-height: 1.8;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+.referencias {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.82rem;
+  color: #555555;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+.referencias li {
+  margin-bottom: 0.75rem;
+  text-indent: -1.5rem;
+  padding-left: 1.5rem;
+}
+@media (min-width: 760px) {
+  main {
+    max-width: 84ch;    
+  }
+
+  .entrevista__cuerpo {
+    column-count: 2;
+    column-gap: 2.75rem;
+    column-rule: 1px solid #D5D2CB;
+  }
+
+  .articulo__cuerpo {
+    column-count: 2;
+    column-gap: 2.75rem;
+    column-rule: 1px solid #D5D2CB;
+  }
+}
+@media (max-width: 480px) {
+  .entrevista__encabezado {
+    flex-direction: column;
+  }
+
+  .entrevista__foto img {
+    width: 80px;
+    height: 100px;
+  }
+
+  .entrevista__cuerpo .etapa:first-of-type .etapa__respuesta::first-letter {
+    font-size: 3rem;
+  }
+}
+
+
+@media print {
+  body {
+    background: #FFFFFF;
+    font-size: 10.5pt;
+    line-height: 1.6;
+  }
+
+  main {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .entrevista,
+  .articulo {
+    border-top: 2pt solid #000000;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .entrevista__cuerpo,
+  .articulo__cuerpo {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+
+  .revista__header {
+    border-bottom: 2pt double #000000;
+  }
+
+  footer {
+    display: none;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.75em;
+    color: #555555;
+  }
+}
+  </style>
+</head>
+
+
+<body>
+
+
+  <header class="revista__header">
+    <span class="revista__eyebrow">Investigación · Ingeniería en Sistemas</span>
+    <h1 class="revista__titulo">La reduccion del consumo de la enegia para el uso de la  IA</h1>
+    <p class="revista__subtitulo">[Subtítulo: una frase que resuma el tema]</p>
+    <p class="revista__meta">
+      Grupo [XX] · [Nombre del grupo] · Edición [fecha]
+    </p>
+  </header>
+
+  <main>
+
+
+    <article class="articulo">
+
+      <h2 class="articulo__titulo">[Título del artículo — puede repetir o afinar el título de arriba]</h2>
+      <p class="articulo__autores">
+        Por: [Integrante 1], [Integrante 2], [Integrante 3], [Integrante 4]
+      </p>
+
+      <!-- Resumen / Abstract -->
+      <div class="articulo__resumen">
+        <span class="articulo__resumen-titulo">Resumen</span>
+        <p>
+          [3-5 líneas que resuman de qué trata la investigación, qué método usaron
+          y a qué conclusión llegaron. Se escribe al final, aunque va primero.]
+        </p>
+      </div>
+
+      <!-- El contenedor .articulo__cuerpo activa columnas tipo revista
+           en pantallas grandes y el drop cap automático. No lo quiten. -->
+      <div class="articulo__cuerpo">
+
+        <!-- 1. Introducción -->
+        <section class="seccion">
+          <h3 class="seccion__titulo">1. Introducción</h3>
+          <p class="seccion__texto">
+            [Planteamiento del problema o pregunta de investigación. Esta primera
+            sección lleva la letra capital automáticamente, no hay que hacer nada extra.]
+          </p>
+        </section>
+        <!--Randy Torres-->
+        <!-- 2. Objetivos e hipótesis -->
+        <section class="seccion">
+          <h3 class="seccion__titulo">Objetivos e hipótesis</h3>
+          <p class="seccion__texto">
+            La investigación tiene por objetivo analizar la problemática del consumo energético que se deriva del uso y entrenamiento de
+            la inteligencia artificial, y evaluar las propuestas eficientes para la optimización y reduccion de su impacto ambiental.
+            Para alcanzar dicho objetivo, la investigación aborda una evaluación de objetivos específicos, que integra, el análisis del consumo
+            de energía eléctrica y la huella de carbono asociados a los modelos de IA. A nivel de software se identifica las ténicas de eficiencia, por ejemplo:
+            cuantización, poda o pruning y destilación de modelos. En el plano físico, la investigación analiza la eficiencia energética y el rendimiento 
+            de diferentes arquitecturas de cómputo especializadas como GPUs, TPUs y NPUs, al tiempo que examina las soluciones de infraestructura, 
+            incluyendo sistemas de refrigeración líquida, energía renovable y nuclear. Así mismo evalua qué tan realista es sostener el crecimiento de la IA sin 
+            comprometer la estabilidad de las redes eléctricas. 
+          </p>
+        </section>
+
+        <!-- 3. Metodología -->
+        <section class="seccion">
+          <h3 class="seccion__titulo">3. Metodología</h3>
+          <p class="seccion__texto">
+            [Cómo investigaron: fuentes, herramientas, proceso.]
+          </p>
+        </section>
+
+        <!-- Cita destacada opcional: rompe las dos columnas automáticamente -->
+        <blockquote class="destacado">
+          "[Frase corta y memorable extraída de los hallazgos del grupo]"
+        </blockquote>
+
+        <!-- 4. Resultados -->
+         <!--Randy Torres-->
+        <section class="seccion">
+          <h3 class="seccion__titulo">4. Resultados</h3>
+          <p class="seccion__texto">
+            Cada vez más personas están utilizando Inteligencia Artificial y agentes de IA. 
+            Como resultado que se prevé que el consumo total de electricidad de los centros de datos se duplique en 2030, 
+            de 485TWh a 950TWh, alcanzando aproximadamente el 3% de la demanda mundial. Además, el despliegue de inteligencia 
+            artificial se enfrenta a una serie de cuellos de &laquo;botella físicos &raquo;
+            La IEA comenta que para resolver estos desafíos energéticos, el sector tecnológico está adoptando nuevos enfoques. 
+            Representó alrededor del 40% de todos los acuerdos corporativos de compra de energía para energías renovables que fueron firmados en 2025. 
+            Los desarrolladores de centros de datos también están avanzando en un gran número de proyectos con generación de 
+            energía basada en gas natural en el sitio, en gran parte en los Estados Unidos. <br>
+
+            Algunos estudios que se han hecho recientemente, que fueron impulsados por la adopción de inteligencia artificial, 
+            han recopilado información a nivel de instalación en 403 Hyperscale data centers (HDC) de Estados Unidos que operan entre mayo de 2024 y 
+            abril de 2025 y estimaron el consumo de electricidad, fuentes de electricidad y emisiones de CO<sub>2</sub>. A lo largo de diferentes escenarios, 
+            esos HDC consumieron aproximadamente 68-99 TWh de electricidad y se asociaron con alrededor de 37-54 millones de toneladas métricas de CO<sub>2</sub>. 
+            Bajo un escenario central, la demanda de electricidad HDC correspondió a aproximadamente el 1,8% del consumo total de electricidad. 
+            La intensidad de carbono promedio puesta por electricidad HDC fue de almenos 545 gCO<sub>2</sub>/kWh, aproximadamente un 48% por encima de la intensidad de 
+            carbono promedio de la red nacional estadounidense contemporánea de 370 gCO<sub>2</sub>/kWh
+
+          </p>
+        </section>
+
+        <!-- 5. Discusión y conclusión -->
+        <section class="seccion">
+          <h3 class="seccion__titulo">5. Discusión y conclusión</h3>
+          <p class="seccion__texto">
+            [Qué significan los resultados, y su conclusión o propuesta de solución.]
+          </p>
+        </section>
+
+        <!-- 6. Referencias -->
+        <section class="seccion">
+          <h3 class="seccion__titulo">6. Referencias</h3>
+          <ol class="referencias">
+            <li>[Autor, A. (Año). Título de la fuente. Editorial/Sitio.]</li>
+            <li>Jonathan Spencer Jones (2026) AI and data centre electricity use continue to surge, IEA finds. Enlit</li>
+            <li>Gianluca Guidi (2026) Assessing the Carbon Emissions and Energy Consumption of U.S. Hyperscale Data Centers.  Arxiv</li>
+
+          </ol>
+        </section>
+
+      </div>
+
+    </article>
+
+  </main>
+
+  <footer>
+    Proyecto de Investigación Web · Programación Web I · Ingeniería en Sistemas
+  </footer>
+
+</body>
+</html>
