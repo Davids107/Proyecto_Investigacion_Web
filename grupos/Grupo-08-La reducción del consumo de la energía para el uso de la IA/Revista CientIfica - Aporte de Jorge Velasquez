@@ -396,7 +396,7 @@ footer {
         <span class="articulo__resumen-titulo">Resumen</span>
         <p>
           [3-5 líneas que resuman de qué trata la investigación, qué método usaron
-          y a qué conclusión llegaron. Se escribe al final, aunque va primero.]
+          y a qué conclusión llegaron. Se escribe al final, aunque va primero.] - Parte de Robert Rodríguez
         </p>
       </div>
     
@@ -419,7 +419,7 @@ footer {
         <section class="seccion">
           <h3 class="seccion__titulo">2. Objetivos e hipótesis</h3>
           <p class="seccion__texto">
-            [Qué buscaban lograr y qué esperaban encontrar antes de investigar.]
+            [Qué buscaban lograr y qué esperaban encontrar antes de investigar.] - Parte de Randy Torres
           </p>
         </section>
 
@@ -427,21 +427,22 @@ footer {
         <section class="seccion">
           <h3 class="seccion__titulo">3. Metodología</h3>
           <p class="seccion__texto">
-            [Cómo investigaron: fuentes, herramientas, proceso.]
+            [Cómo investigaron: fuentes, herramientas, proceso.] - Parte de Robert Rodríguez
           </p>
         </section>
 
         <!--Trabajo en Equipo-->
         <!-- Cita destacada opcional: rompe las dos columnas automáticamente -->
         <blockquote class="destacado">
-          "Reducir el consumo energético de la IA no significa dejar de utilizarla. Lo importante es encontrar un equilibrio entre su utilidad y el uso responsable de los recursos."
+          "Reducir el consumo energético de la IA no significa dejar de utilizarla. 
+          Lo importante es encontrar un equilibrio entre su utilidad y el uso responsable de los recursos."
         </blockquote>
 
         <!-- 4. Resultados -->
         <section class="seccion">
           <h3 class="seccion__titulo">4. Resultados</h3>
           <p class="seccion__texto">
-            [Qué encontraron. Puede incluir datos, comparaciones, hallazgos clave.]
+            [Qué encontraron. Puede incluir datos, comparaciones, hallazgos clave.] - Parte de Randy Torres
           </p>
         </section>
 
@@ -449,7 +450,7 @@ footer {
         <section class="seccion">
           <h3 class="seccion__titulo">5. Discusión y conclusión</h3>
           <p class="seccion__texto">
-            [Qué significan los resultados, y su conclusión o propuesta de solución.]
+            [Qué significan los resultados, y su conclusión o propuesta de solución.] - Parte de Nicole Ramos
           </p>
         </section>
 
